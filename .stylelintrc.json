@@ -1,0 +1,70 @@
+{
+  "plugins": [
+    "stylelint-order",
+    "stylelint-declaration-use-variable",
+    "stylelint-scss"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-prettier/recommended",
+    "stylelint-config-sass-guidelines"
+  ],
+  "rules": {
+    "block-closing-brace-newline-after": [
+      "always",
+      {
+        "ignoreAtRules": [
+          "if",
+          "else"
+        ]
+      }
+    ],
+    "selector-class-pattern": null,
+    "selector-max-id": 0,
+    "no-descending-specificity": [
+      true,
+      {
+        "ignore": [
+          "selectors-within-list"
+        ]
+      }
+    ],
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-alphabetical-order": true,
+    "max-nesting-depth": 4,
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "composes",
+          "compose-with",
+          "font-range"
+        ]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "at-least",
+          "export",
+          "import",
+          "global",
+          "local"
+        ]
+      }
+    ],
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "attribute",
+          "class"
+        ]
+      }
+    ]
+  }
+}

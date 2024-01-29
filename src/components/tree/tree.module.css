@@ -1,0 +1,15 @@
+.tree {
+  height: 15rem;
+  left: -2.4rem;
+  position: absolute;
+  top: -8.5rem;
+  width: 16rem;
+  z-index: 3;
+
+  @media (--mobile) {
+    height: 7.5rem;
+    left: 2rem;
+    top: -5.5rem;
+    width: 8rem;
+  }
+}

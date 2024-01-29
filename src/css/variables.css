@@ -1,0 +1,58 @@
+:root {
+  --color-white: #fff;
+  --color-whiteRgba: rgba(255, 255, 255, 0.45);
+  --color-black: #101010;
+  --color-blackRgba: rgba(0, 0, 0, 0.7);
+  --color-gray: #f0f0f0;
+  --color-text-faded: #7f7f7f;
+  --color-success: #23ce97;
+  --color-error: #ff4040;
+  --font-size-base: 1.6rem;
+  --font-family: 'Montserrat', 'Sen', system-ui;
+  --line-height-base: 1.5;
+  --pageBorder: 10px;
+
+  /* Layout */
+  --offset: 4rem;
+  --logo-width: 20rem;
+  --contentWidth: 74rem;
+  --contentHeight: 75rem;
+
+  /* Spacers */
+  --spacer: 0.4rem;
+
+  @media (--tablet), (--medium-height) {
+    --contentHeight: 65rem;
+  }
+
+  @media (--tablet) {
+    --contentWidth: 64rem;
+  }
+
+  @media (--mobile) {
+    --contentWidth: 100%;
+    --contentHeight: 100%;
+    --offset: 2rem;
+  }
+
+  @media (--tiny-mobile) {
+    --offset: 1rem;
+  }
+
+  @media (--medium-height) {
+    --contentHeight: 65rem;
+  }
+}
+
+@custom-media --tiny-mobile (width < 420px);
+@custom-media --mobile (width < 768px);
+@custom-media --tablet (768px <= width < 1024px);
+@custom-media --desktop (width >= 1024px);
+
+@custom-media --tablet-up (width >= 768px);
+
+/* height medias */
+@custom-media --medium-height (height <= 900px);
+@custom-media --small-height (height <= 820px);
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;

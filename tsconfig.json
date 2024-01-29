@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "es2018"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react", // For react config
+    // "jsx": "preserve", // For non-react config
+    "downlevelIteration": true,
+    "baseUrl": "./",
+    "sourceMap": true
+  },
+  "include": ["./src/**/*"]
+}
