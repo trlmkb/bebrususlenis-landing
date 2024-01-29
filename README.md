@@ -1,3 +1,3 @@
 # Bebrusu slenis
 ## Landing
-https://www.bebrususlenis.lt/
+https://bebrususlenis.landing.jurele.lt/
